@@ -7,7 +7,7 @@ import { Section } from './App.styled';
 
 export function App() {
   const [contacts, setContacts] = useState(
-    () => JSON.parse(window.localStorage.getItem('contactList')) ?? ''
+    () => JSON.parse(window.localStorage.getItem('contactList')) ?? []
   );
   const [filter, setFilter] = useState('');
 
